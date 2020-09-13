@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lbl_loan_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Loan Amount:"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_interest_rate"
+        app:layout_constraintStart_toStartOf="@+id/lbl_interest_rate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_interest_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:text="Interest Rate:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_loan_amt" />
+
+    <TextView
+        android:id="@+id/lbl_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Years"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_interest_rate" />
+
+    <TextView
+        android:id="@+id/lbl_emi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMI"
+        app:layout_constraintEnd_toEndOf="@+id/view_emi_5"
+        app:layout_constraintStart_toStartOf="@+id/view_emi_5"
+        app:layout_constraintTop_toTopOf="@+id/lbl_years" />
+
+    <TextView
+        android:id="@+id/lbl_total_amt"
+        android:layout_width="166dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="Total Amount"
+        app:layout_constraintEnd_toEndOf="@+id/view_total_5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view_total_5"
+        app:layout_constraintTop_toTopOf="@+id/lbl_emi" />
+
+    <TextView
+        android:id="@+id/lbl_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_10"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_10"
+        app:layout_constraintStart_toStartOf="@+id/lbl_10"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_years" />
+
+    <TextView
+        android:id="@+id/lbl_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_15"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lbl_15"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_5" />
+
+    <TextView
+        android:id="@+id/lbl_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_20"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_20"
+        app:layout_constraintStart_toStartOf="@+id/lbl_20"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_10" />
+
+    <TextView
+        android:id="@+id/lbl_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_30"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_30"
+        app:layout_constraintStart_toStartOf="@+id/lbl_30"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_20" />
+
+    <TextView
+        android:id="@+id/lbl_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_25"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_25"
+        app:layout_constraintStart_toStartOf="@+id/lbl_25"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_15" />
+
+    <TextView
+        android:id="@+id/lbl_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="350dp"
+        android:text="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_25" />
+
+    <EditText
+        android:id="@+id/view_emi_5"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:text="0.00"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_5"
+        app:layout_constraintEnd_toEndOf="@+id/view_emi_10"
+        app:layout_constraintStart_toEndOf="@+id/lbl_5"
+        app:layout_constraintTop_toTopOf="@+id/lbl_5" />
+
+    <EditText
+        android:id="@+id/view_total_5"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_total_10"
+        app:layout_constraintTop_toTopOf="@+id/view_emi_5"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_emi_10"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_10"
+        app:layout_constraintEnd_toEndOf="@+id/view_emi_15"
+        app:layout_constraintStart_toEndOf="@+id/lbl_10"
+        app:layout_constraintTop_toTopOf="@+id/lbl_10"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_total_10"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_total_15"
+        app:layout_constraintTop_toTopOf="@+id/view_emi_10"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_emi_15"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_15"
+        app:layout_constraintEnd_toEndOf="@+id/view_emi_20"
+        app:layout_constraintStart_toEndOf="@+id/lbl_15"
+        app:layout_constraintTop_toTopOf="@+id/lbl_15"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_total_15"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_total_20"
+        app:layout_constraintTop_toTopOf="@+id/view_emi_15"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_emi_20"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_20"
+        app:layout_constraintEnd_toEndOf="@+id/view_emi_25"
+        app:layout_constraintStart_toEndOf="@+id/lbl_20"
+        app:layout_constraintTop_toTopOf="@+id/lbl_20"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_total_20"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view_total_25"
+        app:layout_constraintTop_toTopOf="@+id/view_emi_20"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_emi_25"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_25"
+        app:layout_constraintEnd_toEndOf="@+id/view_emi_30"
+        app:layout_constraintStart_toEndOf="@+id/lbl_25"
+        app:layout_constraintTop_toTopOf="@+id/lbl_25"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_total_25"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/view_emi_25"
+        app:layout_constraintEnd_toEndOf="@+id/view_total_30"
+        app:layout_constraintStart_toStartOf="@+id/view_total_30"
+        app:layout_constraintTop_toTopOf="@+id/view_emi_25"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_emi_30"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_30"
+        app:layout_constraintStart_toEndOf="@+id/lbl_30"
+        app:layout_constraintTop_toTopOf="@+id/lbl_30"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/view_total_30"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/view_emi_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_emi_30"
+        android:text="0.00" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="238dp"
+        android:layout_height="27dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="@+id/lbl_loan_amt" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="27dp"
+        android:progressTint="#E91E63"
+        android:thumbTint="#E91E63"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_interest_rate"
+        app:layout_constraintStart_toEndOf="@+id/lbl_interest_rate"
+        app:layout_constraintTop_toTopOf="@+id/lbl_interest_rate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5%"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
