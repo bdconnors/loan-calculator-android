@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">loancalculator</string>
+    <string name="app_name">LoanCalculator</string>
+    <string name="loan_amt_lbl">Loan Amount:</string>
+    <string name="interest_rate_lbl">Interest Rate:</string>
+    <string name="years_lbl">Years</string>
+    <string name="emi_lbl">EMI</string>
+    <string name="total_amt_lbl">Total Amount</string>
+    <string name="yr_5_lbl">5</string>
+    <string name="yr_10_lbl">10</string>
+    <string name="yr_15_lbl">15</string>
+    <string name="yr_20_lbl">20</string>
+    <string name="yr_25_lbl">25</string>
+    <string name="yr_30_lbl">30</string>
+    <string name="decimal_start_value">0.00</string>
+    <string name="interest_rate_start_value">5%</string>
 </resources>
